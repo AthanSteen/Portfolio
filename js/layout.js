@@ -1,24 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const headerHTML = `
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
-  `;
-
     const footerHTML = `
     <footer>
       © <span id="year"></span> Van den Steen Athan — Game Developer
       <div id="current-time" style="font-size:0.9em;color:#888;margin-top:0.3rem;"></div>
     </footer>
   `;
-
-    // Insert header and footer
-    document.body.insertAdjacentHTML("afterbegin", headerHTML);
     document.body.insertAdjacentHTML("beforeend", footerHTML);
 
     // Update year and time

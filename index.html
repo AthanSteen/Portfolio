@@ -11,25 +11,119 @@
 
 <body>
     <main>
-        <h2>Welcome!</h2>
-        <p>Hi, I’m a game development student passionate about creating interactive experiences. Explore my work and projects below!</p>
+        <!-- Sidebar: About Section -->
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a class="hoverable" href="index.html">Home</a></li>
+                    <li><a class="hoverable" href="index.html#Upcoming">Upcoming</a></li>
+                    <li><a class="hoverable" href="index.html#Projects">Projects</a></li>
+                    <li><a class="hoverable" href="index.html#About">About me</a></li>
+                    <li><a class="hoverable" href="index.html#AdditionalProjects">Additional Projects</a></li>
+                </ul>
+            </nav>
 
-        <div class="card">
-            <h3>Upcoming Game Project</h3>
-            <p><strong>Project Name:</strong> MyMachine Game</p>
-            <p>A group project in Unity with MyMachine Flanders
-                <a href="https://www.mymachinevlaanderen.be/droommachine/hier-komt-de-droommachine-van-team-10-go-freinetschool-de-kring" target="_blank"> Teaser..</a>
-            </p>
-        </div>
+            <section class="skills-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Unity / Unreal Engine</li>
+                    <li>C#, C++</li>
+                    <li>2D & 3D Game Design</li>
+                    <li>Version Control (Git, Perforce)</li>
+                    <li>SQL, MySQL, Access</li>
+                </ul>
+            </section>
 
-        <div class="card">
-            <h3>Upcoming Research Project</h3>
-            <p><strong>Research Name:</strong> Colorblindness accesibillty</p>
-            <p>A bachelor research for my last year in DAE</p>
+            <section class="contact-section">
+                <h3>Contact & Links</h3>
+                <div class="social-links">
+                    <a class="hoverable" href="https://www.linkedin.com/in/athan-van-den-steen-5a2752388" target="_blank">🔗 LinkedIn</a>
+                    <a class="hoverable" href="mailto:athansteen@gmail.com">✉️ Email Me</a>
+                    <a class="hoverable" href="https://github.com/athansteen" target="_blank">💻 GitHub</a>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div class="content-header">
+                <h1>My Portfolio</h1>
+                <p>Hi, I'm a game development student passionate about creating interactive experiences. Explore my work and projects below!</p>
+            </div>
+
+            <!-- Upcoming Projects Section -->
+            <section class="section" id="Upcoming">
+                <h2>Upcoming Projects</h2>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>MyMachine Game</h3>
+                        <p><strong>Type:</strong> Game Project</p>
+                        <p>A group project in Unity with MyMachine Flanders</p>
+                        <a href="https://www.mymachinevlaanderen.be/droommachine/hier-komt-de-droommachine-van-team-10-go-freinetschool-de-kring" target="_blank">View Teaser</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Colorblindness Accessibility</h3>
+                        <p><strong>Type:</strong> Research Project</p>
+                        <p>A bachelor research for my last year in DAE</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="section" id="Projects">
+                <h2>Completed Projects</h2>
+                <div id="projects-container">
+                    <!-- Project cards will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section class="section" id="About">
+                <h2>About Me</h2>
+                <section class="profile">
+                    <img src="images/headshot.jpg" alt="My portrait" />
+                    <div>
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Hi, I'm Athan</h3>
+                        <p>I'm a game development student who works primarily with Unity [C#] and Unreal [C++]. Learned html, js, and php in high school. Now currently learning game development at DAE Kortrijk.</p>
+                        <a class="resume-link" href="files/resume.pdf" target="_blank">📄 Download My Resume</a>
+                    </div>
+                </section>
+
+                <section class="skills-section">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Unity / Unreal Engine</li>
+                        <li>C#, C++</li>
+                        <li>2D & 3D Game Design</li>
+                        <li>Version Control (Git, Perforce)</li>
+                        <li>SQL, MySQL, Access</li>
+                    </ul>
+                </section>
+
+                <section class="contact-section">
+                    <h3>Contact & Links</h3>
+                    <div class="social-links">
+                        <a class="hoverable" href="https://www.linkedin.com/in/athan-van-den-steen-5a2752388" target="_blank">🔗 LinkedIn</a>
+                        <a class="hoverable" href="mailto:athansteen@gmail.com">✉️ Email Me</a>
+                        <a class="hoverable" href="https://github.com/athansteen" target="_blank">💻 GitHub</a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="section" id="AdditionalProjects">
+                <h2>Additional Projects</h2>
+                <div id="additional-projects-container">
+                    <!-- Additional project cards will be dynamically inserted here -->
+                </div>
+            </section>
         </div>
     </main>
 
     <script src="js/layout.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 
 </html>
