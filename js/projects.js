@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const projects = [{
                     title: "Beach Blast",
                     year: "2025",
-                    description: "A couch game made in a team of 5 using Unity, having controllers support and local coop.",
+                    description: "Team-based Unity couch game with controller support and local co-op. Implemented core gameplay systems (player movement, interaction logic) and handled debugging and gameplay flow. Developed solo as the sole programmer alongside four artists.",
                     image: "images/beachblast.jpg",
                     embed: '',
                     link: "https://finnbogaertdesign.itch.io/group29beachblast",
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     title: "Monami",
                     year: "2023",
-                    description: "A C# RPG game using .NET framework and communicating with a MySql DB, with basic turn-based combat and walking in a tile-based world.",
+                    description: "Developed a C# RPG using the .NET framework with a MySQL backend. Implemented turn-based combat and tile-based movement.",
                     image: "",
                     embed: "",
                     link: "",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     title: "Farm Diorama",
                     year: "2024",
-                    description: "A small diorama of a farm scene created in Blender, showcasing texturing and modeling skills.",
+                    description: "Modeled and textured a small farm diorama in Blender while learning the fundamentals of 3D modeling and texturing. Published on Sketchfab for interactive viewing.",
                     image: "images/diorama.jpg",
                     embed: '<div class="sketchfab-embed-wrapper"> <iframe title="DAE Diorama retake – Small farm" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/5613acfcaa374637b80af8073d4e7f10/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/dae-diorama-retake-small-farm-5613acfcaa374637b80af8073d4e7f10?utm_medium=embed&utm_campaign=share-popup&utm_content=5613acfcaa374637b80af8073d4e7f10" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> DAE Diorama retake – Small farm </a> by <a href="https://sketchfab.com/athansteen?utm_medium=embed&utm_campaign=share-popup&utm_content=5613acfcaa374637b80af8073d4e7f10" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> athansteen </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=5613acfcaa374637b80af8073d4e7f10" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>',
                     link: "",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     title: "Web Tool cHillegem",
                     year: "2022-2023",
-                    description: "A web tool made for my highschool endwork. A tool to store recipes and plan incoming guests for a hobby restaurant. Built with HTML, CSS, JavaScript, PHP and MySql.",
+                    description: "Developed a full-stack web tool for a hobby restaurant to manage recipes and guest scheduling. Built with HTML, CSS, JavaScript, PHP, and MySQL.",
                     image: "images/cHillegemLogo.jpg",
                     embed: "",
                     link: "",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     title: "PPGA Game",
                     year: "2024",
-                    description: "A small 2D game making use of Plane-based Projective Geometric Algebra (PPGA). Using various geometric algebra operations to move and interact with objects in a 2D space like 'screw motion', 'orbiting' and 'joins'.",
+                    description: "A 2D prototype exploring Plane Projective Geometric Algebra. Implemented geometric transformations such as ‘screw motion’ and ‘orbiting’ through C++ scripting.",
                     image: "",
                     embed: "",
                     link: "",

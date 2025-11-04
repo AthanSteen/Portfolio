@@ -2,12 +2,14 @@
     --color-bg: #0e1117;
     --color-text: #e6edf3;
     --color-accent: #58a6ff;
+    --color-resume: #1f6feb;
     --color-nav-bg: #12161b;
     --color-nav-items-text: #e6edf3;
     --color-nav-items-bg: #1b2028;
     --color-card-bg: #161b22;
     --color-card-highlight-bg: #202032;
     --color-border: #30363d;
+    --color-border-effect: rgba(56, 139, 253, 0.3);
     --font-main: "Inter", sans-serif;
     --sidebar-width: 320px;
 }
@@ -101,7 +103,7 @@ main {
     border-left-color: var(--color-accent);
 }
 
-.profile {
+#profile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +112,7 @@ main {
     text-align: center;
 }
 
-.profile img {
+#profile img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -172,19 +174,22 @@ main {
 }
 
 .resume-link {
-    display: inline-block;
-    background: var(--color-accent);
+    display: block;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-resume));
     color: #fff;
+    font-weight: 600;
     padding: 0.75rem 1.5rem;
     border-radius: 6px;
     text-decoration: none;
-    transition: background 0.3s;
     margin-top: 1rem;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .resume-link:hover {
-    background: #1f6feb;
+    background: linear-gradient(90deg, var(--color-resume), var(--color-accent));
+    box-shadow: 0 0 10px --color-border-effect;
+    transform: translateY(-4px);
 }
 
 
@@ -231,6 +236,8 @@ main {
 }
 
 .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px var(--color-border-effect);
     background-color: var(--color-card-highlight-bg);
 }
 
@@ -371,11 +378,11 @@ footer {
         max-width: 900px;
         margin: 0 auto;
     }
-    .profile {
+    #profile {
         align-items: flex-start;
         text-align: left;
     }
-    .profile img {
+    #profile img {
         width: 180px;
         height: 180px;
     }
