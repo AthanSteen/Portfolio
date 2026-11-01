@@ -4,105 +4,114 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Athan Van den Steen — Game Development student specializing in gameplay programming, C++, and C# using Unreal and Unity.">
-    <title>Athan Van den Steen | Game Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Athan Van den Steen, Game Developer at MeepMeep Games, working on Galactic Vault and V.O.L.T. Survivors.">
+    <meta property="og:title" content="Athan Van den Steen | Game Developer">
+    <meta property="og:description" content="Game Developer at MeepMeep Games. Galactic Vault, V.O.L.T. Survivors.">
+    <meta property="og:image" content="images/games/volt-survivors-header.jpg">
+    <title>Athan Van den Steen | Game Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
 </head>
 
 <body>
-    <main>
-        <!-- Sidebar: About Section -->
-        <aside id="sidebar">
-            <nav>
-                <ul>
-                    <a class="resume-link" href="files/Athan_VanDenSteen_Resume.pdf" target="_blank">📄 My Resume</a>
-                    <li><a class="hoverable" href="index.html">Home</a></li>
-                    <li><a class="hoverable" href="index.html#Progress">In Progress</a></li>
-                    <li><a class="hoverable" href="index.html#Projects">Projects</a></li>
-                    <li><a class="hoverable" href="index.html#About">About</a></li>
-                    <li><a class="hoverable" href="index.html#AdditionalProjects">Additional Projects</a></li>
-                </ul>
-            </nav>
+    <header class="site-header">
+        <a class="brand" href="#top">Athan<span>.</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav">
+            <a href="#Work">Work</a>
+            <a href="#Projects">Projects</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+            <a class="btn btn-small" href="files/Athan_VanDenSteen_Resume.pdf" target="_blank">Resume</a>
+        </nav>
+    </header>
 
-            <section class="skills-section">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Unity / Unreal Engine</li>
-                    <li>C#, C++</li>
-                    <li>2D & 3D Game Design</li>
-                    <li>Version Control (Git, Perforce)</li>
-                    <li>SQL, MySQL, Access</li>
-                </ul>
-            </section>
-
-            <section class="contact-section">
-                <h3>Contact & Links</h3>
-                <div class="social-links">
-                    <a class="hoverable" href="https://www.linkedin.com/in/athan-van-den-steen-5a2752388" target="_blank">🔗 LinkedIn</a>
-                    <a class="hoverable" href="mailto:athansteen@gmail.com">✉️ Email Me</a>
-                    <a class="hoverable" href="https://github.com/athansteen" target="_blank">💻 GitHub</a>
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-bg" style="background-image: url('images/games/volt-survivors-1.jpg');"></div>
+            <div class="hero-inner">
+                <p class="eyebrow"><span class="pulse"></span> Currently building V.O.L.T. Survivors</p>
+                <h1>Athan Van den Steen</h1>
+                <p class="hero-role">Game Developer at <a href="https://meepmeepgames.com" target="_blank">MeepMeep Games</a></p>
+                <p class="hero-text">I make games that feel good to play, from fast-paced roguelike shooters on Steam to couch co-op prototypes. Trained in gameplay programming at Howest DAE, now shipping commercial titles.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="#Work">See my work</a>
+                    <a class="btn btn-ghost" href="files/Athan_VanDenSteen_Resume.pdf" target="_blank">Download resume</a>
                 </div>
-            </section>
-        </aside>
+            </div>
+        </section>
 
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <div class="content-header">
-                <h1>My Portfolio</h1>
-                <p>Hi, I’m Athan — a Game Development student at DAE Kortrijk specializing in gameplay programming and interactive design. I love combining code and creativity to build engaging player experiences.</p>
+        <!-- Professional Work -->
+        <section class="section" id="Work">
+            <div class="section-head">
+                <p class="eyebrow">Professional</p>
+                <h2>Games at MeepMeep</h2>
+            </div>
+            <div id="work-container" class="work-list">
+                <!-- Game cards inserted by js/projects.js -->
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="Projects">
+            <div class="section-head">
+                <p class="eyebrow">Jams, school &amp; personal</p>
+                <h2>Projects</h2>
+                <a class="section-link" href="https://athansteen.itch.io/" target="_blank">Play them on itch.io →</a>
+            </div>
+            <div id="projects-container" class="project-grid">
+                <!-- Project cards inserted by js/projects.js -->
             </div>
 
-            <!-- In Progress Section -->
-            <section class="section" id="Progress">
-                <h2>In Progress</h2>
+            <h3 class="sub-head">Other work</h3>
+            <div id="additional-projects-container" class="project-grid">
+                <!-- Additional project cards inserted by js/projects.js -->
+            </div>
+        </section>
 
-                <div class="card">
-                    <div class="card-content">
-                        <h3>MyMachine Game</h3>
-                        <p><strong>Type:</strong> Game Project</p>
-                        <p>A group project in Unity with MyMachine Flanders</p>
-                        <a href="https://www.mymachinevlaanderen.be/droommachine/hier-komt-de-droommachine-van-team-10-go-freinetschool-de-kring" target="_blank">View Teaser</a>
+        <!-- About -->
+        <section class="section" id="About">
+            <div class="section-head">
+                <p class="eyebrow">About</p>
+                <h2>Hi, I'm Athan</h2>
+            </div>
+            <div class="about">
+                <img class="headshot" src="images/headshot.jpg" alt="Portrait of Athan Van den Steen" />
+                <div>
+                    <p>I'm a game developer at <strong>MeepMeep Games</strong>, a small indie studio where I worked on <strong>Galactic Vault</strong> (a movement-shooter roguelike released on Steam in March 2026) and where I'm now building <strong>V.O.L.T. Survivors</strong>, a 1-4 player co-op sci-fi bullet heaven.</p>
+                    <p>I studied Game Development at Howest DAE, focusing on gameplay and systems programming in C++ (Unreal) and C# (Unity). Before games I did web development (HTML, JS, PHP), and I still love solving the creative and technical puzzles that sit between code and player experience.</p>
+                    <p>Working on commercial games taught me what I enjoy most: <strong>enemy AI</strong>. Designing how enemies move, react and pressure the player, and tuning them until a fight feels fair but intense, is the part of game development I keep coming back to.</p>
+
+                    <div class="skills">
+                        <span>Unity</span>
+                        <span>Unreal Engine</span>
+                        <span>C#</span>
+                        <span>C++</span>
+                        <span>Enemy AI</span>
+                        <span>Gameplay Systems</span>
+                        <span>2D &amp; 3D Game Design</span>
+                        <span>Git / Perforce</span>
+                        <span>SQL / MySQL</span>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Colorblindness Accessibility</h3>
-                        <p><strong>Type:</strong> Research Project</p>
-                        <p>A bachelor research for my last year in DAE</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section class="section" id="Projects">
-                <h2>Completed Projects</h2>
-                <div id="projects-container">
-                    <!-- Project cards will be dynamically inserted here -->
-                </div>
-            </section>
-
-            <section class="section" id="About">
-                <h2>About</h2>
-                <section id="profile">
-                    <img src="images/headshot.jpg" alt="My portrait" />
-                    <div>
-                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Hi, I'm Athan</h3>
-                        <p>I’m a Game Development student at Howest DAE, currently focusing on gameplay and systems programming in C++ (Unreal) and C# (Unity). I started with web development (HTML, JS, PHP) before shifting into game programming, where I
-                            enjoy solving creative and technical challenges.</p>
-                        <a class="resume-link" href="files/Athan_VanDenSteen_Resume.pdf" target="_blank">📄 My Resume</a>
-                    </div>
-                </section>
-            </section>
-
-            <section class="section" id="AdditionalProjects">
-                <h2>Additional Projects</h2>
-                <div id="additional-projects-container">
-                    <!-- Additional project cards will be dynamically inserted here -->
-                </div>
-            </section>
-        </div>
+        <!-- Contact -->
+        <section class="section contact" id="Contact">
+            <h2>Let's talk games</h2>
+            <p>Open to chatting about gameplay, collaborations, or just what you're playing.</p>
+            <div class="contact-links">
+                <a class="btn" href="mailto:athansteen@gmail.com">✉️ Email me</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/athan-van-den-steen-5a2752388" target="_blank">LinkedIn</a>
+                <a class="btn btn-ghost" href="https://github.com/athansteen" target="_blank">GitHub</a>
+                <a class="btn btn-ghost" href="https://athansteen.itch.io/" target="_blank">itch.io</a>
+            </div>
+        </section>
     </main>
 
     <script src="js/layout.js"></script>

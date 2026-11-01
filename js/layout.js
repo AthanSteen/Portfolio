@@ -1,22 +1,49 @@
 document.addEventListener("DOMContentLoaded", () => {
     const footerHTML = `
     <footer>
-      © <span id="year"></span> Van den Steen Athan — Game Developer
-      <div id="current-time" style="font-size:0.9em;color:#888;margin-top:0.3rem;"></div>
+      © <span id="year"></span> Athan Van den Steen, Game Developer at MeepMeep Games
     </footer>
   `;
     document.body.insertAdjacentHTML("beforeend", footerHTML);
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Update year and time
-    const yearEl = document.getElementById("year");
-    const timeEl = document.getElementById("current-time");
+    // Mobile nav toggle
+    const header = document.querySelector(".site-header");
+    const toggle = document.querySelector(".nav-toggle");
+    toggle.addEventListener("click", () => {
+        const open = header.classList.toggle("nav-open");
+        toggle.setAttribute("aria-expanded", open);
+    });
+    document.querySelectorAll(".site-nav a").forEach(a =>
+        a.addEventListener("click", () => header.classList.remove("nav-open"))
+    );
 
-    const updateTime = () => {
-        const now = new Date();
-        yearEl.textContent = now.getFullYear();
-        timeEl.textContent = now.toLocaleString();
-    };
+    // Header background once scrolled past the hero top
+    const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 20);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
 
-    updateTime();
-    setInterval(updateTime, 1000); // update every second
+    // Highlight the nav link of the section in view
+    const links = [...document.querySelectorAll(".site-nav a[href^='#']")];
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            links.forEach(l => l.classList.toggle("active", l.getAttribute("href") === `#${entry.target.id}`));
+        });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll("section[id]").forEach(s => observer.observe(s));
+
+    // Fade sections in as they scroll into view
+    const reveal = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                reveal.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08 });
+    document.querySelectorAll(".section").forEach(s => {
+        s.classList.add("reveal");
+        reveal.observe(s);
+    });
 });
